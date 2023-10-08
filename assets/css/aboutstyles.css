@@ -1,0 +1,58 @@
+/*==================== ABOUT ====================*/
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .about__container {
+    padding-top: 3rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .about__description {
+    text-align: left;
+    margin-bottom: 2.5rem;
+  }
+  
+  @media screen and (max-width: 1200px) {
+    .about__container {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  
+  .about__img-container {
+    flex-basis: 50%;
+    max-width: 700px;
+  }
+  
+  .about__img {
+    border-radius: .5rem;
+    justify-self: center;
+    align-self: center;
+  }
+  
+  .about__description-container {
+    flex-basis: 50%;
+  }
+  
+  .about__info-title,
+  .abount__info-name {
+    display: block;
+    text-align: center;
+  }
+  
+  .about__buttons {
+    display: flex;
+    justify-content: center;
+  }

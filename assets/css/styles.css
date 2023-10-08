@@ -1,0 +1,377 @@
+/*==================== GOOGLE FONTS ====================*/
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;600;700&family=Mulish:wght@300;400;500;600;700&display=swap');
+/*==================== VARIABLES CSS ====================*/
+:root {
+    --header-height: 80px;
+    --footer-height: 250px;
+
+    /*========== Colors ==========*/
+    --accent-color: rgb(255, 52, 30);
+    --title-color: #202020;
+    --text-color: #161616;
+    --light-text-color: #989898;
+    --body-color: #ffffff;
+
+    /*========== Font and typography ==========*/
+    --body-font: 'Mulish', sans-serif;
+    --header-font: 'Karla', sans-serif;
+
+    /* Font sizes for small screens (up to 640px) */
+    --big-font-size: 2rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.2rem;
+    --h3-font-size: 1.125rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .8rem;
+    --smallest-font-size: .73rem;
+
+    /*========== Font weight ==========*/
+    --font-light: 300;
+    --font-medium: 500;
+    --font-bold: 700;
+
+    /*========== z index ==========*/
+    --z-tooltip: 10;
+    --z-fixed: 100;
+    --z-modal: 1000;
+}
+
+/* Font size for medium devices */
+@media screen and (min-width: 641px) {
+  :root {
+      --big-font-size: 2rem;
+      --h1-font-size: 1.5rem;
+      --h2-font-size: 1.25rem;
+      --h3-font-size: 1.25rem;
+      --normal-font-size: 1rem;
+      --small-font-size: .875rem;
+      --smaller-font-size: .813rem;
+      --smallest-font-size: .75rem;
+  }
+}
+
+/* Font size for large devices */
+@media screen and (min-width: 1008px) {
+    :root {
+        --big-font-size: 2.5rem;
+        --h1-font-size: 1.7rem;
+        --h2-font-size: 1.3rem;
+        --h3-font-size: 1.25rem;
+        --normal-font-size: 1rem;
+        --small-font-size: .875rem;
+        --smaller-font-size: .813rem;
+        --smallest-font-size: .8rem;
+    }
+}
+
+/*==================== BASE ====================*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: var(--header-height) 0 0 0;
+  font-family: var(--body-font);
+  line-height: 1.8rem;
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);
+  color: var(--text-color);
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--header-font);
+  color: var(--title-color);
+  font-weight: var(--font-bold);
+}
+
+.text-accent {
+  color: var(--accent-color);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  transition: color 0.2s ease-out;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*==================== SECTIONS ====================*/
+.section {
+  padding: 2rem 0 2rem;
+}
+
+.section__title-container {
+  width: 100%;
+  justify-content: left;
+  padding-bottom: 2rem;
+}
+
+.section__title {
+  text-align: left;
+}
+
+/*==================== LAYOUT ====================*/
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+.main {
+  padding-bottom: var(--footer-height);
+}
+
+.container {
+  max-width: 55%;
+}
+
+@media screen and (max-width: 1300px) {
+  .container {
+    max-width: 80%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    max-width: 90%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    max-width: 95%;
+  }
+}
+
+.header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: var(--body-color);
+  display: flex;
+  justify-content: center;
+}
+
+/*=========== SCROLL LOGO AND BACK TO TOP ================= */
+.scroll-logo {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 30px;
+  z-index: 10;
+  opacity: 0;
+  transition: all 0.3s linear; /* Transition when appear/disappear */
+}
+
+.back-to-top-container {
+  font-family: var(--header-font);
+  font-size: var(--smallest-font-size);
+  text-transform: uppercase;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgb(247, 247, 247, 0.5);
+  height: 30px;
+  width: 110px;
+  border-radius: 20px;
+  display: flex;
+  gap: 0.2rem;
+  z-index: 10;
+  opacity: 0;
+  transition: all 0.3s linear; /* Transition when appear/disappear */
+  transition: transform 0.2s;
+}
+
+.back-to-top-container:hover {
+  cursor: pointer;
+  transform: translateY(-3px);
+}
+
+.scroll-show {
+  opacity: 1;
+}
+
+/*==================== NAV ====================*/
+.nav {
+  width: 100%;
+  top: 0;
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  height: calc(var(--header-height));
+}
+
+@media screen and (max-width: 1000px) {
+  .nav {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .nav {
+    margin-left: 0.8rem;
+    margin-right: 0.8rem;
+  }
+}
+
+.logo {
+  display: none;
+  width: 30px;
+}
+
+@media screen and (max-width: 600px) {
+  .logo {
+    display: block;
+  }
+}
+
+.nav__name {
+  color: var(--title-color);
+  font-family: var(--header-font);
+  font-size: 1.2rem;
+  font-weight: var(--font-medium);
+  transition: transform 250ms;
+  display: block;
+  transition: transform 250ms, color 0.2s ease-out;
+}
+
+@media screen and (max-width: 600px) {
+  .logo {
+    display: block;
+  }
+
+  .nav__name {
+    display: none;
+  }
+}
+
+.nav__name:hover {
+  color: var(--title-color);
+  transform: translateY(-3px);
+  cursor: pointer;
+  color: var(--accent-color);
+}
+
+.nav__link {
+  font-family: var(--header-font);
+  font-size: var(--small-font-size);
+  text-transform: uppercase;
+  color: var(--light-text-color);
+  font-weight: var(--font-medium);
+  transition: transform 250ms;
+  display: inline-block;
+}
+
+.nav__link:hover,
+.nav__active-link:hover {
+  transform: translateY(-3px);
+}
+
+.nav__active-link {
+  font-family: var(--header-font);
+  font-size: var(--small-font-size);
+  text-transform: uppercase;
+  font-weight: var(--font-bold);
+  transition: transform 250ms;
+  display: inline-block;
+  color: var(--accent-color);
+}
+
+.scroll-header {
+  box-shadow: 0 -1px 4px rgba(0,0,0,.15);
+}
+
+.nav__list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2.3rem;
+}
+
+.nav__item {
+  margin-bottom: 0;
+}
+
+/*==================== FOOTER ====================*/
+#footer {
+  position: absolute;
+  width: 100%;
+  height: var(--footer-height);
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--text-color);
+}
+
+.footer__container {
+  text-align: left;
+  padding-top: 3rem;
+  width: 100%;
+  row-gap: 3.5rem;
+  padding-bottom: 3rem;
+  color: white;
+  font-size: var(--normal-font-size);
+}
+
+#footer__bottom-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2rem;
+}
+
+#footer__credits, 
+.credit-link {
+  font-size: var(--small-font-size);
+  text-transform: uppercase;
+  font-family: var(--header-font);
+  color: white;
+}
+
+#footer__socials {
+  font-size: var(--small-font-size);
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: right;
+  align-items: center;
+}
+
+.footer__socials-buttons {
+  color: white;
+  font-family: var(--header-font);
+  text-transform: uppercase;
+}
+
+.footer__socials-buttons:hover,
+.credit-link:hover {
+  color: var(--accent-color);
+}
