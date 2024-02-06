@@ -59,8 +59,9 @@
                 <div class="proj__nav" id="proj-nav">
                     <span class="proj-title">Studytracker</span>
                     <a href="#overview" class="nav-link">Overview</a>
-                    <a href="#prototype" class="nav-link">Prototype</a>
+                    <a href="#setting-the-scene" class="nav-link">Setting the Scene</a>
                     <a href="#the-app" class="nav-link">The StudyTracker App</a>
+                    <a href="#usability" class="nav-link">Usability Test</a>
                     <a href="#pilot-study" class="nav-link">Pilot Study</a>
                     <a href="#main-study" class="nav-link">Main Study</a>
                     <a href="#conclusions" class="nav-link">Conclusions</a>
@@ -73,7 +74,7 @@
         <!--==================== OVERVIEW ====================-->
             <section class="proj proj-section proj-top-padding" id="overview">
                 <div class="proj__container">
-                    <h1>Academic procrastination and personal informatics</h1>
+                    <h1>Academic procrastination and the quantified self</h1>
 
                     <div class="proj__details-container">
                         <div class="proj__details">
@@ -86,17 +87,18 @@
                             16 Months
                         </div>
                         <div class="proj__details">
-                            <span class="title">Methods</span><br>
-                            Literature Review, <br>
-                            Usability Study, <br>
-                            Semi-Structured Interviews, <br>
-                            Surveys
-                        </div>
-                        <div class="proj__details">
-                            <span class="title">Key Skills</span><br>
+                            <span class="title">Skills</span><br>
                             Prototyping, <br>
                             User Research, <br>
                             Qual + Quant Analysis
+                        </div>
+                        <div class="proj__details">
+                            <span class="title">Tools</span><br>
+                            Figma, Surveys,<br>
+                            Interviews, <br>
+                            Notion, Excel, <br>
+                            Transcribing Software, <br>
+                            JASP
                         </div>
                     </div>
                     <div class="padding-top-1 padding-bottom-2-5">
@@ -110,11 +112,27 @@
                     <div class="proj__container">
                         <div class="proj__info-block">
                             <h3>Overview</h3>
-                            <h1>Introduction and Problem Statement</h1>
-                            Procrastination remains a pervasive challenge among university students, significantly impacting academic success. 
-                            Recognizing the downfalls of existing interventions due to their cost and time-consuming nature, our study aimed to 
-                            investigate the effectiveness of a technology-driven solution. Specifically, we explored whether the simple act of tracking study time, 
-                            coupled with data visualizations, could serve as a practical and accessible strategy to improve study behaviour and reduce procrastination.
+                            <h1>Background Information</h1>
+                            The following case study is a condensed overview of my 16-month Master’s thesis. I specialized in Human-Computer Interaction, and 
+                            did research on how students interact with focus tracking apps.
+
+                            <h2 class="padding-top-2">Abstract</h2>
+                            Procrastination is a prevalent issue among university students, and it is
+                            important to investigate potential interventions. This thesis describes the
+                            design and implementation of a self-tracking mobile application that students
+                            can use to track their study sessions. The aim of this study was to investigate
+                            the impact that the application has on procrastination behaviour, along with an
+                            exploration of how students interpret their study data. A pilot study revealed
+                            that participants experienced an improvement in their focus, time management
+                            skills, and accountability. Following this, results from a six-week randomized
+                            controlled trial indicated that only the control group experienced a significant
+                            decrease in procrastination scores, however there was no significant difference
+                            between the two groups. Additionally, I identified themes that describe how
+                            students interpret their data and additional impacts that the application had on
+                            study behaviour, which led to a discussion about design implications and areas
+                            for future research.
+
+
                             <h2 class="padding-top-2">My Role</h2>
                             Primary Researcher - independent thesis project
                             
@@ -127,25 +145,24 @@
             </section>
 
             <!--==================== PROTOTYPE ====================-->
-            <section class="proj proj-section" id="prototype">
+            <section class="proj proj-section" id="setting-the-scene">
                 <div class="proj__container">
                     <div class="proj__info-block">
-                        <h3>Prototype</h3>
-                        <h1>Design Process</h1>
-                        The design process unfolded systematically, beginning with rough hand sketches that evolved into wireframes and
-                        resulted in a high-fidelity prototype, created on Figma. 
-                        Informed by current market trends and established design principles, the prototype drew inspiration from popular productivity tracking apps. 
-                        <span class="highlight-text purple">Notably, we deliberately refrained from integrating gamified or social features to isolate the impact of tracking and visualizations on procrastination.</span>
+                        <h3>Setting the Scene</h3>
+                        <h1>Motivation</h1>
+                        Have you ever felt stuck in a never-ending cycle of procrastination, especially during your university days? 
+                        Research shows 80% to 95% of university students face this challenge, leading to negative outcomes such as stress and poor well-being. 
+                        Traditional solutions such as training programs or therapy are costly and time-consuming. 
+                        <br><br>Leveraging the trend of tracking data for health, wellbeing, and productivity (also called the Quantified Self), 
+                        focus-tracking apps offer a cost-effective and accessible intervention. The question remains: Are focus-tracking apps effective for students? Let's find out!
+                        
+                        
+                        <h1 class="h1-padding-top">Persuasive Design</h1>
+                        My literature review identified three persuasive element classes. Many studies test apps with all features, making it hard to discern their individual effects. 
+                        Thus, our focus was on a purely quantified self application, isolating the variable for assessment. 
+                        In non-research contexts, apps typically combine elements from multiple classes.
                         <br><br>
-                        <img src="assets/img/studytracker/figma-prototype.png">
-                        <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FHRtk5B25v9qnEfgv3VVzLJ%2FStudy-Tracker%3Ftype%3Ddesign%26node-id%3D13-26%26t%3DRcuj4z18Hk16Ww6s-1%26scaling%3Dscale-down%26page-id%3D0%253A1%26starting-point-node-id%3D3%253A164%26mode%3Ddesign" allowfullscreen></iframe>
-                        <h1 class="h1-padding-top">Usability Study</h1>
-                        To assess usability, I conducted usability studies with eight participants, who engaged with the high-fidelity Figma prototype. They provided feedback 
-                        through think-aloud tasks and System Usability Scale (SUS) scores (average SUS score: 83.75). Insights found from analyzing the data prompted adjustments to 
-                        certain graphs on the Charts page for improved clarity and user understanding. 
-                        Particularly, I addressed participant confusion regarding progress representation by altering the design of the graphs.
-                        <img src="assets/img/studytracker/change1.png">
-                        <img src="assets/img/studytracker/change2.png">
+                        <img src="assets/img/studytracker/persuasive-design.png">
                     </div>
                 </div>
             </section>
@@ -155,10 +172,45 @@
                 <div class="proj__container">
                     <div class="proj__info-block">
                         <h3>The StudyTracker App</h3>
-                        <h1>Implementation</h1>
-                        I implemented the StudyTracker app using SwiftUI, which was compatible with iOS 15.0+. 
-                        Core features included a study timer, a history section for session management, 
-                        and tags for categorizing study sessions. User feedback was provided through text and charts.
+                        <h1>Design</h1>
+                        Diving into the application's design, it's important to note that this was an HCI research project, not a UX design project; therefore, the design process wasn't the main focus. 
+                        For the app's design, I drew inspiration from existing focus-tracking apps on the market and incorportated recommendations for self-tracking apps
+                        that I identified during my literature review. Three main components went into the design of the application:
+                        <br><br>
+                        <div class="flex-column-container">
+                            <div class="flex-row-container1">
+                                <div class="number-text">
+                                    01
+                                </div>
+                                <div class="">
+                                    <b>The Tracking Mechanism.</b> The app used a <b>semi-automated tracking mechanism. </b>
+                                    This means that the user must initiate and end the timer, but the rest of the work is done by the app (ie. Creating data visualizations, summing up data). 
+                                </div>
+                            </div>
+                            <div class="flex-row-container1">
+                                <div class="number-text">
+                                    02
+                                </div>
+                                <div class="">
+                                    <b>Data Visualizations.</b> Since there were no research-based guidelines on data visualizations for productivity tracking applications, 
+                                    I carefully assessed all the data visualizations in popular focus apps, and used this knowledge to construct a dashboard for the app. 
+                                </div>
+                            </div>
+                            <div class="flex-row-container1">
+                                <div class="number-text">
+                                    03
+                                </div>
+                                <div class="">
+                                    <b>Visual Aesthetics.</b> I followed design principles to ensure that the app had an aesthetically pleasing user interface.
+                                </div>
+                            </div>
+                        </div>
+                        <br><br>
+                        I drew rough paper prototypes followed by wireframes. Finally, I created a high-fidelity prototype in Figma.
+                        <br><br>
+                        <img src="assets/img/studytracker/figma-prototype.png">
+                        <h1 class="h1-padding-top">Development</h1>
+                        I implemented the application using Swift, making it compatible with iOS 15.0+. A functioning version of the app was deployed for Beta testing.
                         <br><br>
                         <div class="flex-row-container1">
                             <div>
@@ -179,19 +231,43 @@
             </section>
 
             <!--==================== PILOT STUDY ====================-->
+            <section class="proj proj-section" id="usability">
+                <div class="proj__container">
+                    <div class="proj__info-block">
+                        <h3>Usability Test</h3>
+                        During development, I conducted a usability study to ensure that the app design was usable prior to moving onto the Pilot and Main studies. 
+                        I asked eight participants to think out loud as they performed some tasks on the high-fidelity Figma prototype, then they filled out a System Usability Scale.
+                        Key insights from the usability test are outlined below:
+                    </div>
+                </div>
+                <div class="proj__img">
+                    <img src="assets/img/studytracker/usability-study.png">
+                </div>
+                <div class="proj__container">
+                    <div class="proj__info-block">
+                        <h1 class="h1-padding-top">App Iterations</h1>
+                        Following the usability study, I implemented changes to the graphs that participants indicated as confusing.
+                        <br><br>
+                        <img src="assets/img/studytracker/usability-changes.png">
+                    </div>
+                </div>
+
+            </section>
+
+            <!--==================== MAIN STUDY ====================-->
             <section class="proj proj-section" id="pilot-study">
                 <div class="proj__container">
                     <div class="proj__info-block">
                         <h3>Pilot Study</h3>
-                        <h1>Procedure and Results</h1>
-                        I aimed to explore several research questions:<br><br>
+                        Next, I conducted a pilot study with the Beta deployment of the app.<br><br>
+                        <b>Objectives of the pilot study:</b><br><br>
                         <div class="flex-column-container">
                             <div class="flex-row-container1">
                                 <div class="number-text">
                                     01
                                 </div>
                                 <div class="">
-                                    What are students' thoughts on the developed application?
+                                    Ensure the app has no bugs
                                 </div>
                             </div>
                             <div class="flex-row-container1">
@@ -199,7 +275,55 @@
                                     02
                                 </div>
                                 <div class="">
-                                    How does the app impact students' study behaviour?
+                                    Get initial feedback and experiences of users
+                                </div>
+                            </div>
+                        </div>
+                        <br><br>
+                        Seven participants used the app for 10 days each, then I conducted semi-structured interviews with each participant to learn more about their experience using the app.
+
+                        <h1 class="h1-padding-top">Results</h1>
+                        I transcribed the interviews and then performed a thematic analysis to identify themes. Four themes
+                         emerged that encapsulated the participants’ experiences using the app: Improvement in Study Behaviour, Invoked Positive Feelings, Satisfaction with the App, Design Suggestions. 
+                    </div>
+                </div>
+                <div class="proj__img">
+                    <img src="assets/img/studytracker/pilot-study-results.png">
+                </div>
+                <div class="proj__container">
+                    <div class="proj__info-block">
+                        <h1 class="h1-padding-top">App Iterations</h1>
+                        Following the pilot study, I implemented features that the participants suggested and addressed some usability problems.<br><br>
+                        <img src="assets/img/studytracker/pilot-study-changes.png">
+                    </div>
+                </div>
+            </section>
+                
+              <!--==================== MAIN STUDY ====================-->
+              <section class="proj proj-section" id="main-study">
+                <div class="proj__container">
+                    <div class="proj__info-block">
+                        <h3>Main Study</h3>
+                        For the main study, I conducted a 6-week randomized controlled trial with a control group consisting of nine participants (did not use the app) 
+                        and an experimental group consisting of nine participants (used the app). Both groups responded to an initial and final procrastination questionnaire, 
+                        along with weekly procrastination questionnaires to assess subtle changes.
+                        <br><br>
+                        <b>Objectives of the main study:</b><br><br>
+                        <div class="flex-column-container">
+                            <div class="flex-row-container1">
+                                <div class="number-text">
+                                    01
+                                </div>
+                                <div class="">
+                                    Understand how the app impacts students’ study behaviours
+                                </div>
+                            </div>
+                            <div class="flex-row-container1">
+                                <div class="number-text">
+                                    02
+                                </div>
+                                <div class="">
+                                    Examine how students interact with and interpret their study data
                                 </div>
                             </div>
                             <div class="flex-row-container1">
@@ -207,73 +331,32 @@
                                     03
                                 </div>
                                 <div class="">
-                                    How can the app be improved?
+                                    Test the hypothesis: The experimental group will experience a significantly greater decrease in procrastination scores than the participants in the control group.
                                 </div>
                             </div>
                         </div>
-                        <br>
-                        I conducted a 10-day pilot study with seven participants, aged 18 to 51, to receive initial feedback on the app. Thematic analysis of semi-structured interview transcripts
-                        revealed four key themes: improvement in study behaviour, invoked positive feelings, overall satisfaction with the app, and design suggestions. 
-                        Insights from this study informed subsequent design decisions.
+                        
+                        <h1 class="h1-padding-top">Results</h1>
+                        I performed statistical analysis on all quantitative data that was collected. Important insights gained are shown in the diagram below:<br><br>
+                        <img src="assets/img/studytracker/main-quant-results.png">
                         <br><br>
-                        <img src="assets/img/studytracker/pilot-study-results.png">
-                        <h1 class="h1-padding-top">App Iterations</h1>
-                        Adjustments were made based on pilot study feedback. Changes included the addition of a notification feature that reminds users of the running timer, 
-                        the removal of mandatory tag colours, and the incorporation of customization features suggested by users. A button for additional chart information was added to address user confusion.
-                        <br><br>
-                        <img src="assets/img/studytracker/change3.png">
+                        I performed a thematic analysis, beginning by printing all open-ended survey responses and highlighting important quotes. 
+                        I transferred quotes into a Notion data sheet and grouped them based on codes. I created an affinity map to see which codes can be turned into larger themes.
                     </div>
                 </div>
-            </section>
-
-            <!--==================== MAIN STUDY ====================-->
-            <section class="proj proj-section" id="main-study">
+                <div class="proj__img">
+                    <img src="assets/img/studytracker/qual-analysis-1.png">
+                </div>
                 <div class="proj__container">
                     <div class="proj__info-block">
-                        <h3>Main Study</h3>
-                        <h1>Procedure</h1>
-                        I conducted a 6-week randomized controlled trial, where each group comprised of 9 participants.
-                        The experimental group used the app and the control group did not use the app. Each group responded to an initial and final procrastination questionnaire, 
-                        along with weekly procrastination questionnaires to assess any subtle changes.<br><br>
-                        <div class="flex-column-container">
-                            <div class="flex-row-container1">
-                                <div class="number-text">
-                                    H1
-                                </div>
-                                <div class="">
-                                    The participants in the experimental group will experience a significantly greater decrease in procrastination scores than the participants in the control group.
-                                </div>
-                            </div>
-                            <div class="flex-row-container1">
-                                <div class="number-text">
-                                    RQ1
-                                </div>
-                                <div class="">
-                                    How does the app impact students' study behaviours?
-                                </div>
-                            </div>
-                            <div class="flex-row-container1">
-                                <div class="number-text">
-                                    RQ2
-                                </div>
-                                <div class="">
-                                    How do students interact with and interpret their study data?
-                                </div>
-                            </div>
-                        </div>
-
-                        <h1 class="h1-padding-top">Qualitative Results</h1>
-                        Thematic analysis of interviews identified four main themes: improved time perception, sustained focus on studies, 
-                        enhanced time management, and the recognition that data alone is insufficient. Participants also expressed concerns 
-                        about the application's engagement and design.
-                        <br><br>
-                        <img src="assets/img/studytracker/main-study-results.png">
-                        <br><br>
-                        
+                        The thematic analysis resulted in five main themes that encompassed the experiences of the experimental group. 
                     </div>
                 </div>
+                <div class="proj__img">
+                    <img src="assets/img/studytracker/qual-analysis-2.png">
+                </div>
             </section>
-                
+
             <!--==================== CONCLUSIONS ====================-->
             <section class="proj proj-section" id="conclusions">
                 <div class="proj__container">

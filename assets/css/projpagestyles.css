@@ -32,6 +32,15 @@
     text-decoration: none;
   }
 
+  .proj-link-2 {
+    color: var(--accent-color);
+  }
+
+  .proj-link-2:hover {
+    color: var(--text-color);
+    text-decoration: none;
+  }
+
   .proj h1 {
     display: block;
     font-size: var(--h1-font-size);
@@ -227,6 +236,12 @@
   .proj__bg {
     width: 100%;
     background-color: rgb(250, 250, 250);
+    display: flex;
+    justify-content: center;
+  }
+
+  .proj__img {
+    width: 80%;
     display: flex;
     justify-content: center;
   }
